@@ -28,7 +28,7 @@ Deploys a Linux virtual machine into a segmented virtual network using a Bicep t
 <h align="center">
 <h3>Step 1 — Create the Log Analytics Workspace</h3>
 <br />
-1. Logged into Azure and created a dedicated resource group to contain all lab resources. <br/>
+Logged into Azure and created a dedicated resource group to contain all lab resources. <br/>
 <br/>
 <img src="https://github.com/user-attachments/assets/a70c0f74-b170-46e2-b401-eac67c98a683" height="80%" width="80%" alt="Azure Resource Group"/>
 <br />
@@ -36,7 +36,7 @@ Deploys a Linux virtual machine into a segmented virtual network using a Bicep t
 <br />
 <h3>Step 2 — Review and Deploy the Bicep Template</h3>
 <br />
-2. Created azuredeploy.bicep and deployed it from the Azure CLI. The template deployed the VNet, NSG, NIC, and VM in dependency order. <br/>
+Created azuredeploy.bicep and deployed it from the Azure CLI. The template deployed the VNet, NSG, NIC, and VM in dependency order. <br/>
 <br/>
 <img src="https://github.com/user-attachments/assets/d7fc65fa-322c-4440-804f-b3481ef546b7" height="80%" width="80%" alt="Bicep Deployment"/>
 <br />
@@ -44,7 +44,7 @@ Deploys a Linux virtual machine into a segmented virtual network using a Bicep t
 <br />
 <h3>Step 3 — Verify the Deployment via CLI</h3>
 <br />
-3. Ran the following commands to confirm the VM is running and the NSG rules and subnets matched the intended architecture. <br/>
+Ran the following commands to confirm the VM is running and the NSG rules and subnets matched the intended architecture. <br/>
 <br/>
 <img src="https://github.com/user-attachments/assets/a27cb234-d04c-4491-a147-9eb0c8888c45" height="80%" width="80%" alt="VM-NSG Confirmation"/>
 <br />
@@ -55,7 +55,7 @@ Deploys a Linux virtual machine into a segmented virtual network using a Bicep t
 <br />
 <h3>Step 4 — Assign RBAC via the Portal</h3>
 <br />
-4. Navigated to rg-lab01 > Access Control (IAM) > Add Role Assignment and assigned the Virtual Machine Contributor role to a group, scoped to the resource group. Verified the assignment under Entra ID > Groups > grp-vm-contributors > Azure Role Assignments.<br/>
+Navigated to rg-lab01 > Access Control (IAM) > Add Role Assignment and assigned the Virtual Machine Contributor role to a group, scoped to the resource group. Verified the assignment under Entra ID > Groups > grp-vm-contributors > Azure Role Assignments.<br/>
 <br/>
 <img src="https://github.com/user-attachments/assets/5523f417-455f-456a-aa0f-1dbc0f332a70" height="80%" width="80%" alt="Shared Drive"/>
 <br />
@@ -63,7 +63,7 @@ Deploys a Linux virtual machine into a segmented virtual network using a Bicep t
 <br />
 <h3>Step 5 — Cleanup</h3>
 <br />
-5. Deleted the resource group to remove all provisioned resources and avoid ongoing charges.  <br/>
+Deleted the resource group to remove all provisioned resources and avoid ongoing charges.  <br/>
 <br/>
 <img src="https://github.com/user-attachments/assets/01b51beb-a4e2-402f-ac9b-270d29243c63" height="80%" width="80%" alt="Password Policy GPO Linked to Domain"/>
 <br />
