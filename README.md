@@ -26,7 +26,7 @@ Deploys a Linux virtual machine into a segmented virtual network using a Bicep t
 
 <p align="center">
 <h align="center">
-<h3>Step 1 — Create the Log Analytics Workspace</h3>
+<h3>Step 1 — Create the Resource Group</h3>
 <br />
 Logged into Azure and created a dedicated resource group to contain all lab resources. <br/>
 <br/>
